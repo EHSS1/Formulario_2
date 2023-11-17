@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portal do Aluno</title>
+		<style>
+			body{
+					background-image: url("./img/fundo.JFIF");
+					background-repeat: round;
+					background-attachment: fixed;
+					background-size:auto;
+					font-family: arial;
+					
+
+				}
+		</style>			
+	</head>
+	
+	<body>
+		<div id="container" style="text-align: center;
+			background-color: white;
+			position: absolute; 
+			top: 50%; left: 50%;
+			transform: translate(-50%,-50%);	
+			padding:80px;
+			border-radius: 15px; 
+			input: padding: 15px">
+			
+			
+			<div style="margin-left: 20px; margin-right: 20px">
+				<style>
+				input{
+				padding: 05px;
+				font-size: 25px;
+				}
+				button{
+				background-color: dodgerblue;
+				padding: 15px;
+				width: 100%;
+				border-radius: 10px;
+				color: white;
+				
+				}
+				button:hover{
+				background-color: deepskyblue;
+				cursor: pointer;
+				}
+				
+				</style>
+				
+				<img src="./img/facul.png" alt="Logotipo da Faculdade" width="300">
+				<br/>
+				<br/>
+				<br/>
+			
+				<hr>
+				<h2>Aluno</h2>
+				<hr>
+				<br/>
+				<form action="processar_login.php" method="post" style="text-align: left;">
+					<label for="matricula">Matrícula:</label>
+					<br/>
+					<input type="text" id="matricula" name="matricula" required>
+					<br/>
+					<br/>
+
+					<label for="senha">Senha:</label>
+					<br/>
+					<input type="password" id="senha" name="senha" required>
+					<br/>
+					<br/>
+
+					<button>Entrar</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
